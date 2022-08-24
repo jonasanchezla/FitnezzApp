@@ -7,4 +7,4 @@ const fitnezzSchema = new mongoose.Schema({
 
 const Fitnezz = mongoose.model("Fitnezz", fitnezzSchema)
 
-module.export = Fitnezz
+module.exports = Fitnezz
