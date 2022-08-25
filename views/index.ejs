@@ -8,6 +8,16 @@
 </head>
 <body>
     <h1>MyFitnezz App</h1>
+    <ul>
+        <% for(let i = 0; i < fitnezz.length; i++) { %>
+        <li>
+            <a href="/fitnezz/<%=fitnezz[i].id%>">
+                <%=fitnezz[i].name%>
+                <!-- <img src="<%=fitnezz[i].img%>" alt=""> -->
+            </a>
+        </li>
+        <% } %>
+    </ul>
    
 
     <nav>

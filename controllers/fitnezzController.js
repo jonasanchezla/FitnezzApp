@@ -2,12 +2,15 @@ const express= require("express");
 const router= express.Router()
 const Fitnezz = require("../models/fitnezz.js")
 
+
+//Index Route
 router.get("/", (req,res)=>{
     Fitnezz.find({}, (error, fitnezz)=>{
-        res.render("index.ejs",{ days: fitnezz})
+        res.render("index.ejs",{ fitnezz})
     })
 })
 
+//POST
 router.post("/", (req,res)=>{
     Fitnezz.create(req.body, (error, createDay)=>{
         if (error){

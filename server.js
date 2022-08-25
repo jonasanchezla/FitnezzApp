@@ -7,7 +7,7 @@ const session = require('express-session')
 const mongoose = require('mongoose');
 
 // Global configuration
-const mongoURI = 'mongodb://localhost:27017/'+ 'tweets'
+const mongoURI = 'mongodb://localhost:27017/'
 const db = mongoose.connection
 
 // Connect to Mongo
