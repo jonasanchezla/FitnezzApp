@@ -7,14 +7,13 @@
     <title>Fitnezz Index</title>
 </head>
 <body>
-    <h1>MyFitnezz App</h1>
+    <h1>MyFitnezz App </h1>
     <ul>
         <% for(let i = 0; i < fitnezz.length; i++) { %>
         <li>
             <a href="/fitnezz/<%=fitnezz[i].id%>">
                 <%=fitnezz[i].day%>
-               
-            </a>
+             </a>
         </li>
         <% } %>
     </ul>

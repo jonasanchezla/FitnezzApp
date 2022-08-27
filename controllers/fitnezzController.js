@@ -52,6 +52,16 @@ router.put('/:id', (req, res) => {
 	})
 })
 
+//DELETE
+router.delete('/:id', (req,res) =>{
+    Fitnezz.findByIdAndDelete(req.params.id, (err,product) =>{
+        if(err){
+            console.log(err)
+        }else{
+            res.redirect('/fitnezz')
+        }
+    })
+})
 
 
 

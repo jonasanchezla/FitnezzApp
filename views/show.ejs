@@ -8,30 +8,34 @@
 </head>
 <body>
     <h1><%=fitnezz.day%></h1>
-    <h2>Exercice/Training 1: <%=fitnezz.exercise1%></h2>
+    <h2>Exercise #1: <%=fitnezz.exercise1%></h2>
     <p>Sets: <%=fitnezz.sets1%></p> 
     <p>Reps: <%=fitnezz.reps1%></p>
 
-    <h2>Exercice/Training 2: <%=fitnezz.exercise2%></h2>
+    <h2>Exercise #2: <%=fitnezz.exercise2%></h2>
     <p>Sets: <%=fitnezz.sets2%></p> 
     <p>Reps: <%=fitnezz.reps2%></p>
 
-    <h2>Exercice/Training 3:<%=fitnezz.exercise3%></h2>
+    <h2>Exercise #3:<%=fitnezz.exercise3%></h2>
     <p>Sets: <%=fitnezz.sets3%></p> 
     <p>Reps: <%=fitnezz.reps3%></p>
 
-    <h2>Exercice/Training 4:<%=fitnezz.exercise4%></h2>
+    <h2>Exercise #4:<%=fitnezz.exercise4%></h2>
     <p>Sets: <%=fitnezz.sets4%></p> 
     <p>Reps: <%=fitnezz.reps4%></p>
     
-    <h2>Exercice/Training 5:<%=fitnezz.exercise5%></h2>
+    <h2>Exercise #5:<%=fitnezz.exercise5%></h2>
     <p>Sets: <%=fitnezz.sets5%></p> 
     <p>Reps: <%=fitnezz.reps5%></p>
 
-    <h2>Exercice/Training 6:<%=fitnezz.exercise6%></h2>
+    <h2>Exercise #6:<%=fitnezz.exercise6%></h2>
     <p>Sets: <%=fitnezz.sets6%></p> 
     <p>Reps: <%=fitnezz.reps6%></p>
+
+    
    
+    <form action="/fitnezz/<%=fitnezz.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Product">
 
 
     <a href="/fitnezz">Return to Home Page</a>
