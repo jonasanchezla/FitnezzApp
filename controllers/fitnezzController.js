@@ -22,9 +22,37 @@ router.post("/", (req,res)=>{
     })
 })
 
+//New 
 router.get('/new', (req, res) => {
 	res.render('new.ejs');
 });
+
+//SHOW ROUTE
+router.get('/:id',(req,res)=>{
+    Fitnezz.findById(req.params.id , (err, fitnezz) =>{
+        res.render('show.ejs', {
+            fitnezz: fitnezz
+        })
+    })
+})
+
+// EDIT
+router.get('/:id/edit', (req, res) => {
+	Fitnezz.findById(req.params.id, (err, editApp) => {
+		res.render('edit.ejs', {fitnezz: editApp})
+	})
+})
+
+// UPDATE
+router.put('/:id', (req, res) => {
+	Fitnezz.findByIdAndUpdate(req.params.id, req.body,{new:true}, (err, updatedModel) => {
+        console.log(req.params.id);
+        console.log(req.body);
+		res.redirect('/fitnezz')
+	})
+})
+
+
 
 
 module.exports= router

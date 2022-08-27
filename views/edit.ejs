@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Workout</title>
+</head>
+<body>
+    <h1>Edit Workout</h1>
+    <form action="/fitnezz/<%= fitnezz.id%>?_method=PUT" method="POST">
+        Exercise 1: <input type="text" name="exercise1" value="<%=fitnezz.exercise1%>"/>
+        Sets: <input type="text" name="sets1" value="<%=fitnezz.set1%>"/>
+        Reps: <input type="text" name="reps1" value="<%=fitnezz.reps1%>"/>
+<br>
+        Exercise 2: <input type="text" name="exercise2" value="<%=fitnezz.exercise2%>"/>
+        Sets: <input type="text" name="sets2" value="<%=fitnezz.set2%>"/>
+        Reps: <input type="text" name="reps2" value="<%=fitnezz.reps2%>"/>
+<br>
+        Exercise 3: <input type="text" name="exercise3" value="<%=fitnezz.exercise3%>"/>
+        Sets: <input type="text" name="sets3" value="<%=fitnezz.set3%>"/>
+        Reps: <input type="text" name="reps3" value="<%=fitnezz.reps3%>"/>
+<br>
+        Exercise 4: <input type="text" name="exercise4" value="<%=fitnezz.exercise4%>"/>
+        Sets: <input type="text" name="sets4" value="<%=fitnezz.set4%>"/>
+        Reps: <input type="text" name="reps4" value="<%=fitnezz.reps4%>"/>
+<br>
+        Exercise 5: <input type="text" name="exercise5" value="<%=fitnezz.exercise5%>"/>
+        Sets: <input type="text" name="sets5" value="<%=fitnezz.set5%>"/>
+        Reps: <input type="text" name="reps5" value="<%=fitnezz.reps5%>"/>
+<br>
+        Exercise 6: <input type="text" name="exercise6" value="<%=fitnezz.exercise6%>"/>
+        Sets: <input type="text" name="sets6" value="<%=fitnezz.set6%>"/>
+        Reps: <input type="text" name="reps6" value="<%=fitnezz.reps6%>"/>
+
+<br>
+<br>
+        <input type="submit" name="" value="Submit Changes"/>
+    </form>
+</body>
+</html>
