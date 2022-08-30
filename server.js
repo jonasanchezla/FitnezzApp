@@ -4,6 +4,8 @@ const Fitnezz = require("./models/fitnezz.js")
 const methodOverride = require('method-override');
 const session = require('express-session')
 
+const PORT = process.env.PORT || 5000;
+
 const mongoose = require('mongoose');
 
 // Global configuration
@@ -29,6 +31,6 @@ const fitnezzController= require("./controllers/fitnezzController.js")
 app.use("/fitnezz", fitnezzController)
 
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log("Fitnezz App Server is running");
 })
