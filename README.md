@@ -3,6 +3,7 @@ Fitnezz App Project 2
 ## Project Choice (Tell us which project you're doing!)
 > A name for your Project  
 Fitnezz App
+https://fitnezz-app-2022.herokuapp.com/
 
 ## Project Description
 > Include:<br />
