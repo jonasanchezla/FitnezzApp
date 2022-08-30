@@ -33,6 +33,15 @@ const fitnezzController= require("./controllers/fitnezzController.js")
 app.use("/fitnezz", fitnezzController)
 
 
+// DEFAULT
+app.get('/', (req, res) => {
+	const today = new Date();
+	res.send(`
+    <h1>Welcome to my Fitnezz App!!</h1>
+    <p>${today}</p>
+  `);
+});
+
 app.listen(PORT, ()=>{
     console.log("Fitnezz App Server is running");
 })
