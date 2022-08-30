@@ -4,12 +4,14 @@ const Fitnezz = require("./models/fitnezz.js")
 const methodOverride = require('method-override');
 const session = require('express-session')
 
-const PORT = process.env.PORT || 5000;
+
+const PORT = process.env.PORT || 4000;
+
 
 const mongoose = require('mongoose');
 
 // Global configuration
-const mongoURI = 'mongodb://localhost:27017/'
+const mongoURI = 'mongodb+srv://admin:BGTbgt55@jonascluster.fmvzo5e.mongodb.net/Fitnezz-Project?retryWrites=true&w=majority'
 const db = mongoose.connection
 
 // Connect to Mongo
