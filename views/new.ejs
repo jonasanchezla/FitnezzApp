@@ -1,6 +1,6 @@
 <%- include('./partials/header.ejs') %>
     <h1>Add a new Workout</h1>
-
+    <div class="new">
     <form method="POST" action="/fitnezz">
       <fieldset>
         <label for="day">Day:</label>
@@ -62,10 +62,11 @@
 
       <fieldset>
         <label for="image">Images:</label>
-        <input id="image" type="text" name="image" placeholder="Enter images here">
+        <input id="image" type="text" name="image" placeholder="Enter image link here">
         </fieldset>
+      </div>
     <br>
-
+    
 
       <button>Add to Schedule!</button>
     </form>
