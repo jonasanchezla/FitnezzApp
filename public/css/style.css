@@ -11,18 +11,39 @@ h1 {
   text-align: center;
   margin-top: 80px;
   font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-  
+a:link {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 13px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightgray;
+  color: white;
+}
+
 .index{ 
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  color: red;
+  color: whitesmoke;
   font-size: 30px;
 }
 
-.index:hover{
-  color: yellow
+a:hover{
+  color: goldenrod
 }
 
 .show{
@@ -34,8 +55,32 @@ h1 {
 
 .show h2{
   color: gold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .show p{
   color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.edit {
+  background-image: url("https://virtualbackgrounds.site/wp-content/uploads/2020/09/modern-home-gym.jpg");
+
+}
+
+.edit1{
+  font-size: 30px;
+  font-weight: bolder;
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.resources{
+  display: flex;
+  text-decoration: none;
+  color: blanchedalmond;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
 }

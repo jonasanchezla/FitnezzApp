@@ -27,13 +27,11 @@
     <p>Reps: <%=fitnezz.reps6%></p>
     </nav>
    
-    
-   
     <form action="/fitnezz/<%=fitnezz.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete Product">
-
-
-    <a href="/fitnezz">Return to Home Page</a>
-    <a href="/fitnezz/<%=fitnezz.id%>/edit">Edit this Workout</a>
+    <input type="submit" value="Delete Workout">
+    <br>
+    <br>
+     <button type="button"><a href="/fitnezz">Return to Home Page</a></button>
+    <button type="button"><a href="/fitnezz/<%=fitnezz.id%>/edit">Edit this Workout</a></button>
 </body>
 </html>

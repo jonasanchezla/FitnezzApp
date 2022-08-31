@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Workout</title>
-</head>
-<body>
+<%- include('./partials/header.ejs') %>
+<body class="edit">
     <h1>Edit Workout</h1>
+
+    <nav class="edit1">
     <form action="/fitnezz/<%= fitnezz.id%>?_method=PUT" method="POST">
         Exercise 1: <input type="text" name="exercise1" value="<%=fitnezz.exercise1%>"/>
         Sets: <input type="text" name="sets1" value="<%=fitnezz.sets1%>"/>
@@ -34,33 +29,30 @@
         Reps: <input type="text" name="reps6" value="<%=fitnezz.reps6%>"/>
     <br>
         Edit Image: <input type="text" name="image" value="<%=fitnezz.image%>"/>
+    </nav>
 
     <br>
     <br>
         <input type="submit" name="" value="Submit Changes"/>
     </form>
 
-    <p>Resources: 
-        <a href="https://www.bodybuilding.com/content/10-best-chest-exercises-for-building-muscle.html#10-best-chest-exercises-for-building-muscle-dumbbell-bench-press">Chest Exercises</a>
+    <p class="resources">Resources: 
         
-        <a href="https://www.bodybuilding.com/content/10-best-muscle-building-back-exercises.html">Back Exercises</a>
-
-        <a href="https://www.bodybuilding.com/content/10-best-muscle-building-shoulder-exercises.html">Shoulder Exercises</a>
-
-        <a href="https://www.bodybuilding.com/content/10-best-muscle-building-leg-exercises.html">Leg Exercises</a>
-
-        <a href="https://www.bodybuilding.com/content/10-best-muscle-building-biceps-exercises.html">Bicep Exercises</a>
-
-        <a href="https://www.bodybuilding.com/content/the-10-best-muscle-building-triceps-exercises.html">Tricep Exercises</a>
-
-        <a href="https://www.bodybuilding.com/content/10-best-muscle-building-ab-exercises.html">Ab Exercises</a>
-
-
-
-
-
-
-    
+        <button type="button"><a href="https://www.bodybuilding.com/content/10-best-chest-exercises-for-building-muscle.html#10-best-chest-exercises-for-building-muscle-dumbbell-bench-press">Chest Exercises</a></button>
+        
+        <button type="button"><a href="https://www.bodybuilding.com/content/10-best-muscle-building-back-exercises.html">Back Exercises</a></button>
+        
+        <button type="button"><a href="https://www.bodybuilding.com/content/10-best-muscle-building-shoulder-exercises.html">Shoulder Exercises</a></button>
+        
+        <button type="button"><a href="https://www.bodybuilding.com/content/10-best-muscle-building-leg-exercises.html">Leg Exercises</a></button>
+        
+        <button type="button"><a href="https://www.bodybuilding.com/content/10-best-muscle-building-biceps-exercises.html">Bicep Exercises</a></button>
+         
+        <button type="button"><a href="https://www.bodybuilding.com/content/the-10-best-muscle-building-triceps-exercises.html">Tricep Exercises</a></button>
+        
+        <button type="button"><a href="https://www.bodybuilding.com/content/10-best-muscle-building-ab-exercises.html">Ab Exercises</a></button>
+        
+        <button type="button"><a href="https://www.verywellfit.com/strength-training-sets-based-on-goals-1231231">How many sets and reps you should do</a></button>
 
     </p>
 </body>
