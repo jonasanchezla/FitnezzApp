@@ -20,6 +20,8 @@ const fitnezzSchema = new mongoose.Schema({
     reps4: Number,
     reps5: Number,
     reps6: Number,
+    image: String
+
 })
 
 const Fitnezz = mongoose.model("Fitnezz", fitnezzSchema)

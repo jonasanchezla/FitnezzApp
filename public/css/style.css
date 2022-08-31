@@ -1,0 +1,41 @@
+body {
+  background-image: url("https://images.ctfassets.net/ew96z4wsnz93/5n6jadyH3ZC6V5fj7mU5ZV/e02a1ef081a7ee76fcfe513c4f11d00c/ClassPass_Zoom-background_6-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 120%;
+  }
+
+h1 {
+  color: gold;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 40px;
+
+}
+  
+.index{ 
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  color: red;
+  font-size: 30px;
+}
+
+.index:hover{
+  color: yellow
+}
+
+.show{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em
+}
+
+.show h2{
+  color: gold;
+}
+
+.show p{
+  color: aliceblue;
+}

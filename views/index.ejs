@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitnezz Index</title>
-</head>
-<body>
+<%- include('./partials/header.ejs') %>
     <h1>MyFitnezz App 🏋🏼‍♀️</h1>
-    <ul>
+    <ul class="index">
         <% for(let i = 0; i < fitnezz.length; i++) { %>
         <li>
             <a href="/fitnezz/<%=fitnezz[i].id%>">
                 <%=fitnezz[i].day%>
+                <br>
+                <br>
+                <img src="<%=fitnezz[i].image%>" alt="image">
              </a>
         </li>
         <% } %>
     </ul>
    
-
-    <nav>
-        <a href="/fitnezz/new">Create a New Workout</a>
-    </nav>
 
 </body>
 </html>

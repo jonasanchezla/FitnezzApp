@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('./partials/header.ejs') %>
     <h1>Add a new Workout</h1>
 
     <form method="POST" action="/fitnezz">
@@ -58,7 +50,7 @@
         <label for="reps5">Reps:</label>
         <input id="reps5" type="text" name="reps5" placeholder="Enter Number of Reps">
       </fieldset>
-      
+
       <fieldset>
         <label for="exercise6">Exercise 6:</label>
         <input id="exercise6" type="text" name="exercise6" placeholder="Enter name of Exercise">
@@ -67,7 +59,14 @@
         <label for="reps6">Reps:</label>
         <input id="reps6" type="text" name="reps6" placeholder="Enter Number of Reps">
       </fieldset>
+
+      <fieldset>
+        <label for="image">Images:</label>
+        <input id="image" type="text" name="image" placeholder="Enter images here">
+        </fieldset>
     <br>
+
+
       <button>Add to Schedule!</button>
     </form>
 

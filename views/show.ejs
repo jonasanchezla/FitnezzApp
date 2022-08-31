@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=fitnezz.day%></title>
-</head>
-<body>
+<%- include('./partials/header.ejs') %>
     <h1><%=fitnezz.day%></h1>
+
+    <nav class="show">
     <h2>Exercise #1: <%=fitnezz.exercise1%></h2>
     <p>Sets: <%=fitnezz.sets1%></p> 
     <p>Reps: <%=fitnezz.reps1%></p>
@@ -16,22 +10,23 @@
     <p>Sets: <%=fitnezz.sets2%></p> 
     <p>Reps: <%=fitnezz.reps2%></p>
 
-    <h2>Exercise #3:<%=fitnezz.exercise3%></h2>
+    <h2>Exercise #3: <%=fitnezz.exercise3%></h2>
     <p>Sets: <%=fitnezz.sets3%></p> 
     <p>Reps: <%=fitnezz.reps3%></p>
 
-    <h2>Exercise #4:<%=fitnezz.exercise4%></h2>
+    <h2>Exercise #4: <%=fitnezz.exercise4%></h2>
     <p>Sets: <%=fitnezz.sets4%></p> 
     <p>Reps: <%=fitnezz.reps4%></p>
     
-    <h2>Exercise #5:<%=fitnezz.exercise5%></h2>
+    <h2>Exercise #5: <%=fitnezz.exercise5%></h2>
     <p>Sets: <%=fitnezz.sets5%></p> 
     <p>Reps: <%=fitnezz.reps5%></p>
 
-    <h2>Exercise #6:<%=fitnezz.exercise6%></h2>
+    <h2>Exercise #6: <%=fitnezz.exercise6%></h2>
     <p>Sets: <%=fitnezz.sets6%></p> 
     <p>Reps: <%=fitnezz.reps6%></p>
-
+    </nav>
+   
     
    
     <form action="/fitnezz/<%=fitnezz.id%>?_method=DELETE" method="POST">
